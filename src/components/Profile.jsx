@@ -38,7 +38,6 @@ const Profile = () => {
   return (
     <div className="sun">
       <div className="asteroids">
-        <div className="shape"></div>
         <div className="Profile">
           <div className='profile-main-title'>
             <div className="profile-title">

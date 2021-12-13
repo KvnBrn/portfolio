@@ -40,8 +40,8 @@
 .profile-right-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
   width: 32%;
   height: 85vh;
 }
@@ -72,13 +72,13 @@
   height: auto;
 }
 .skill-logo-bis {
-  width: 140px;
+  width: 115px;
   height: auto;
 }
 /*progress-bar*/
 .progress-circle {
-  font-size: 20px;
-  margin: 20px;
+  font-size: 18px;
+  margin-left: 28px;
   position: relative;
   padding: 0;
   width: 5em;
@@ -253,12 +253,11 @@
   top: 0;
   right: 0;
   left: 96px;
-  width: calc(100% - 96px);
   height: 100vh;
 }
 .asteroids {
   background: url(../assets/asteroids.png);
-  background-size: cover;
+  /* background-size: cover; */
   position: absolute;
   top: 0;
   left: 0;
@@ -279,5 +278,142 @@
 @keyframes return {
   from {
     transform: rotateY(180deg);
+  }
+}
+
+@media (max-width: 1440px) {
+  .sun {
+    position: initial;
+    width: auto;
+    margin-left: -55px;
+  }
+  .asteroids {
+    background: none;
+  }
+  .Profile {
+    letter-spacing: inherit;
+    line-height: initial;
+    float: none;
+  }
+  .Profile .profile-main-title {
+    padding: 0;
+  }
+  .Profile h2 {
+    width: 50%;
+    margin-top: 0;
+  }
+  .profile-left-container {
+    padding: 0;
+    padding-left: 6.5em;
+  }
+  .profile-description::before {
+    width: 350px;
+    height: 700px;
+    shape-outside: circle(55% at right);
+  }
+  .profile-right-container {
+    justify-content: initial;
+    width: auto;
+    height: auto;
+  }
+  .profile-right-container .profile-title h2 {
+    width: 100%;
+  }
+  .profile-right-container .skills {
+    justify-content: center;
+  }
+  .skill-card {
+    height: 140px;
+  }
+  .skill-logo {
+    width: 60px;
+  }
+  .skill-logo-bis {
+    width: 90px;
+  }
+  .progress-circle {
+    font-size: initial;
+    margin: 0;
+    margin-left: 6px;
+  }
+}
+@media (max-width: 1355px) {
+  .skills {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 1260px) {
+  .sun {
+    background: url('../assets/stars.png');
+    margin-left: 0;
+  }
+  .profile-description::before {
+    display: none;
+  }
+  .Profile {
+    justify-content: center;
+    padding-left: 96px;
+    letter-spacing: 0.1rem;
+    line-height: 1.7em;
+  }
+  .Profile h2 {
+    margin: 23.904px 0;
+    width: auto;
+  }
+  .profile-left-container {
+    width: 80%;
+    padding: 0;
+  }
+  .profile-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-right-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .skills {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .skill-card {
+    height: 160px;
+  }
+  .progress-circle {
+    margin-left: 30%;
+  }
+}
+@media (max-width: 1024px) {
+  .skills {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 650px) {
+  .skills {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 649px) and (min-width: 451) {
+  .progress-circle {
+    margin-left: 22%;
+  }
+}
+@media (max-width: 450px) {
+  .skills {
+    grid-template-columns: 1fr;
+  }
+  .progress-circle {
+    margin-left: 35%;
+  }
+}
+@media (max-width: 375px) {
+  .progress-circle {
+    margin-left: 32%;
+  }
+}
+@media (max-width: 320px) {
+  .progress-circle {
+    margin-left: 28%;
   }
 }
