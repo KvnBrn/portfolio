@@ -10,6 +10,7 @@ const CustomerProjects = () => {
         <Project 
           projetImg={''}
           projetLink={webLinkIcon}
+          projetUrl={''}
           projetTitle={'The Good Loop'}
           projetDescription={'App being created.'}
           projetLanguages={'Language used : React, CSS, JS, NodeJS, MySQL.'}

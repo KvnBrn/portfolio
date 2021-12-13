@@ -1,4 +1,3 @@
-import webLinkIcon from '../assets/webLinkIcon.jpg';
 import './PersonalProjects.css';
 
 const PersonalProjects = () => {
