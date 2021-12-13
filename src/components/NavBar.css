@@ -1,0 +1,76 @@
+.NavBar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  float: left;
+  width: 96px;
+  min-height: 100vh;
+  background-color: var(--nav-black-color);
+}
+.NavBar-logo, .NavBar-bottom {
+  margin: 1rem 0;
+}
+.NavBar-logo h1 {
+  margin: 0;
+  font-size: 4em;
+  text-shadow: 5px 0 0 var(--pumpkin-color);
+  background: linear-gradient(90deg, #00fa71 0%, #97ff85 50%,#fa761a 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.NavBar-logo h1:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.NavBar-menu {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.NavBar-menu li {
+  margin: 2rem 0;
+  font-size: 2em;
+  list-style: none;
+}
+.NavBar-menu a {
+  color: var(--white-color);
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.NavBar-menu a:hover {
+  color: var(--spring-green-color);
+}
+.nav-icons {
+  position: relative;
+  animation: 1s ease-in tooltip;
+}
+.nav-icons:hover::after,
+.nav-icons:focus::after {
+  content: attr(aria-label);
+  position: absolute;
+  top: -1rem;
+  margin-left: 4rem;
+  transform: translateX(-50%);
+  z-index: 1;
+  padding: 5px 14px;
+  background: var(--nav-black-color);
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+.NavBar-bottom h1 {
+  margin: 0;
+  font-size: 1em;
+  color: var(--spring-green-color);
+}
+@keyframes tooltip {
+  from {
+    transform: translateX(-65px);
+  }
+}

@@ -1,0 +1,184 @@
+.Home {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  width: 95%;
+  min-height: 100vh;
+  float: right;
+  position: relative;
+}
+.home-left-container {
+  width: 50%;
+  margin-left: 7rem;
+}
+.home-left-container h1 {
+  margin: 0;
+}
+.home-main-title {
+  font-size: 2rem;
+}
+.home-main-title span {
+  text-shadow: 5px 0 0 var(--spring-green-color);
+  background: linear-gradient(90deg, #fa761a 0%, #fca05f 33%, #FB8937 66%, #97ff85 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.home-title .carrousel {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  font-size: 1.5rem;
+  line-height: 45px;
+}
+.carrousel .prefixe {
+  position: absolute;
+  height: 45px;
+  top: 0;
+  right: 0;
+}
+.carrousel .change-hidden {
+  position: absolute;
+  height: 45px;
+  top: 0;
+  left: 30%;
+  text-align: left;
+  overflow: hidden;
+}
+.carrousel .change-hidden .hidden-content {
+  position: relative;
+  animation: slideshow 8s ease-in-out infinite;
+}
+.carrousel .change-hidden .element {
+  display: block;
+  font-weight: 700;
+  color: var(--spring-green-color);
+}
+.home-right-container {
+  display: flex;
+  text-align: center;
+  width: 50%;
+  margin-left: 7rem;
+}
+.home-initial h1 {
+  margin: 0;
+  font-size: 35em;
+  transform: rotate(-30deg);
+  text-shadow: var(--spring-green-color) 3pc -0pc;
+  background: linear-gradient(90deg, #fa761a 0%, #fca05f 33%, #FB8937 66%, #97ff85 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*Animation*/
+.stars {
+  background: url('../assets/stars.png');
+  position: absolute;
+  top: 0;
+  left: 96px;
+  right: 0;
+  width: calc(100% - 96px);
+  animation: defile 60s linear infinite;
+  overflow: hidden;
+}
+.shooting-stars-one {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  bottom: 0;
+  left: -115px;
+  background: linear-gradient(45deg, #FAF39B 0%, #FCF373 50%, #FBEF50 100%);
+  box-shadow:
+  0 0 2px #FCF373,
+  -3px 3px 4px #FAF39B,
+  -6px 6px 6px #FAF39B,
+  -9px 9px 8px #FAF39B;
+  border: 0;
+  border-radius: 50%;
+  animation: 15s linear infinite fly;
+}
+.shooting-stars-two {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  bottom: 800px;
+  left: 400px;
+  background: linear-gradient(45deg, #FAF39B 0%, #FCF373 50%, #FBEF50 100%);
+  box-shadow:
+  0 0 2px #FCF373,
+  -3px -3px 4px #FAF39B,
+  -6px -6px 6px #FAF39B,
+  -9px -9px 8px #FAF39B;
+  border: 0;
+  border-radius: 50%;
+  animation: 11s linear infinite fly2;
+}
+.shooting-stars-three {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  bottom: 850px;
+  left: 50px;
+  background: linear-gradient(45deg, #FAF39B 0%, #FCF373 50%, #FBEF50 100%);
+  box-shadow:
+  0 0 2px #FCF373,
+  -3px -3px 4px #FAF39B,
+  -6px -6px 6px #FAF39B,
+  -9px -9px 8px #FAF39B;
+  border: 0;
+  border-radius: 50%;
+  animation: 9s linear infinite fly3;
+}
+@keyframes defile {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1280px 720px;
+  }
+}
+@keyframes fly {
+  0%, 37.5% {
+    transform: translate(-3600px, 1960px);
+  }
+  50%, 100% {
+    transform: translate(3600px, -1960px);
+  }
+}
+@keyframes fly2 {
+  0%, 37.5% {
+    transform: translate(-2000px, -2000px);
+  }
+  50%, 100% {
+    transform: translate(2000px, 2000px);
+  }
+}
+@keyframes fly3 {
+  0%, 37.5% {
+    transform: translate(-2400px, -480px);
+  }
+  50%, 100% {
+    transform: translate(2400px, 480px);
+  }
+}
+@keyframes slideshow {
+  0%, 15% {
+    transform: translateY(0);
+  }
+  20%, 35% {
+    transform: translateY(-45px);
+  }
+  40%, 55% {
+    transform: translateY(-90px);
+  }
+  60%, 75% {
+    transform: translateY(-135px);
+  }
+  80%, 95% {
+    transform: translateY(-180px);
+  }
+  100% {
+    transform: translateY(-225px);
+  }
+}

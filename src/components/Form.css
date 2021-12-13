@@ -1,0 +1,88 @@
+.Form {
+  text-align: center;
+  padding: 20px;
+  margin-top: -40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+}
+.Form h3 {
+  width: 100%;
+}
+.form-box {
+  position: relative;
+  max-width: 100%;
+}
+.form-box .row50 {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px;
+}
+.row100 {
+  padding: 0 20px;
+}
+.form-box .row100 .input-box {
+  width: 100%;
+}
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 50%;
+}
+.input-box label {
+  color: var(--pumpkin-color);
+  margin-top: 10px;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+  text-align: start;
+}
+.input-box input {
+  padding: 10px;
+  font-size: 1.1rem;
+  outline: none;
+  border: 1px solid var(--nav-black-color);
+  border-radius: 5px;
+}
+.input-box textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  outline: none;
+  border: 1px solid var(--nav-black-color);
+  border-radius: 5px;
+  resize: none;
+}
+#submitBtn {
+  background: var(--pumpkin-color);
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 15px;
+  font-size: 1.1rem;
+  max-width: 120px;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#submitBtn:hover {
+  box-shadow: 0 5px 35px #fa771a;
+}
+.input-box ::placeholder {
+  font-size: 1rem;
+  color: #999;
+}
+
+@media (max-width: 600px) {
+  .form-box .row50 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .input-box {
+    width: 100%;
+  }
+}

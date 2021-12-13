@@ -1,0 +1,66 @@
+.Projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: calc(100% - 96px);
+  background: url(../assets/auroraborealis.jpg) no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.all-projects {
+  position: relative;
+  display: flex;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, transparent, #0004);
+}
+.all-projects .project-theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 320px;
+  height: 200px;
+  margin: 20px 20px;
+  border-radius: 20px;
+  background: var(--russian-violet-color);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+  z-index: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.all-projects .project-theme::before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 200%;
+  background: linear-gradient(#00FA71, #00FA71);
+  animation: rotate 3s linear infinite;
+}
+.all-projects .project-theme::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 16px;
+  background: #AFB3F7;
+}
+.all-projects .project-theme:hover {
+  transform: scale(1.2);
+}
+.all-projects .project-theme h2 {
+  position: relative;
+  margin: 20px 0;
+  font-size: 2rem;
+  color: var(--russian-violet-color);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+  z-index: 10;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

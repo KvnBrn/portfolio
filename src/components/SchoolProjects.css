@@ -1,0 +1,26 @@
+.SchoolProjects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: calc(100% - 96px);
+  background: url(../assets/auroraborealis.jpg) no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.SchoolProjects h2 {
+  font-size: 2rem;
+  color: var(--spring-green-color);
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+.all-school-projects {
+  position: relative;
+  width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

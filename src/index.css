@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: var(--font-size);
+  font-family: 'ubuntu', 'Raleway', 'Montserrat', sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: var(--main-black-color);
+  color: var(--white-color);
+  cursor: default;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --font-size: 1rem;
+  --spring-green-color: #00FA71;
+  --mint-green-color: #97FF85;
+  --pumpkin-color: #FA761A;
+  --russian-violet-color: #443061;
+  --main-black-color: #000000;
+  --nav-black-color: #0A100D;
+  --white-color: #FFFFFF;
+}

@@ -1,0 +1,71 @@
+.Project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Project .box {
+  position: relative;
+  width: 400px;
+  height: 320px;
+  background: #443061af;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 1;
+}
+.Project .box .icon img {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 2;
+  transition-delay: 0.25s;
+}
+.Project .box:hover .icon img {
+  width: 90px;
+  height: 90px;
+  top: 10px;
+  left: calc(50% - 45px);
+  border-radius: 50%;
+  transition-delay: 0s;
+}
+.Project .box .content {
+  position: relative;
+  padding: 20px;
+  color: aliceblue;
+  margin-top: 80px;
+  z-index: 1;
+  transform: scale(0);
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.Project .box:hover .content {
+  transform: scale(1);
+  transition-delay: 0.25s;
+}
+.Project .box .content img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: calc(70%);
+  margin-top: -55px;
+  transition-delay: 0s;
+  cursor: pointer;
+}
+.Project .box .content h3 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: var(--spring-green-color);
+}
+.Project .box .content p {
+  text-align: justify;
+  font-weight: 300;
+  line-height: 1.5rem;
+  margin: 0;
+}
