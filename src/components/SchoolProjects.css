@@ -24,3 +24,12 @@
   align-items: center;
   gap: 20px;
 }
+
+@media (min-width: 1440px) {
+  .SchoolProjects {
+    background-size: cover;
+  }
+  .SchoolProjects h2 {
+    margin-top: 0;
+  }
+}

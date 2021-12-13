@@ -2,7 +2,7 @@
   display: flex;
   text-align: left;
   align-items: center;
-  width: 95%;
+  width: 100%;
   min-height: 100vh;
   float: right;
   position: relative;
@@ -41,7 +41,7 @@
   position: absolute;
   height: 45px;
   top: 0;
-  left: 30%;
+  left: 230px;
   text-align: left;
   overflow: hidden;
 }
@@ -180,5 +180,62 @@
   }
   100% {
     transform: translateY(-225px);
+  }
+}
+
+@media (max-width: 1440px) {
+  .home-left-container {
+    margin-left: 5em;
+  }
+  .home-right-container {
+    margin-left: 0em;
+  }
+  .stars, .shooting-stars-one, .shooting-stars-two, .shooting-stars-three {
+    animation: none;
+  }
+  .shooting-stars-one, .shooting-stars-two, .shooting-stars-three {
+    display: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  .Home {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-left-container {
+    margin-left: 45%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-left-container {
+    margin-left: 25%;
+  }
+  .home-right-container {
+    width: 100%;
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 670px) {
+  .home-left-container {
+    margin-left: 1em;
+  }
+  .home-left-container h1 {
+    font-size: 1em;
+  }
+  .home-left-container span {
+    color: var(--spring-green-color);
+    background: none;
+    margin-left: -5px;
+    margin-right: 3px;
+  }
+  .home-title .carrousel .change-hidden {
+    position: initial;
+  }
+  .home-right-container {
+    display: none;
   }
 }

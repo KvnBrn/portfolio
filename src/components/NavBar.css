@@ -8,6 +8,7 @@
   width: 96px;
   min-height: 100vh;
   background-color: var(--nav-black-color);
+  position: fixed;
 }
 .NavBar-logo, .NavBar-bottom {
   margin: 1rem 0;
